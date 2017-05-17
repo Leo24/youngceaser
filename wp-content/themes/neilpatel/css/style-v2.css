@@ -401,6 +401,11 @@ html[dir="rtl"],
 	white-space: normal;
 }
 
+.menu-footer .btn-rig{
+	font-size: 14px;
+	padding: 15px 30px;
+}
+
 /* btn-wrr */
 
 .btn-wrr,
@@ -484,11 +489,12 @@ html[dir="rtl"],
 }
 
 .btn-rig:hover {
-	background-color: #f16334;
+	background-color: #fff;
 	border-color: #f16334;
-	color: #fff;
 }
-
+.menu-footer .btn.btn-rig a.hover{
+	color: #f16334;
+}
 /* btn-wrg */
 
 .btn-wrg {
@@ -890,7 +896,7 @@ html[dir="rtl"],
 
 .menu-header-nav,
 .menu-footer {
-	text-align: right;
+	/*text-align: right;*/
 }
 
 .rtl .menu-header-nav,
@@ -901,7 +907,7 @@ html[dir="rtl"],
 .menu-header .menu-item,
 .menu-footer .menu-item {
 	display: inline-block;
-	margin: 0 0 0 70px;
+	margin: 0 0 0 35px;
 }
 
 .rtl .menu-header .menu-item,
@@ -911,7 +917,7 @@ html[dir="rtl"],
 
 .menu-header .menu-item:first-child,
 .menu-footer .menu-item:first-child {
-	margin-left: 0;
+	/*margin-left: 0;*/
 }
 
 .rtl .menu-header .menu-item:first-child,

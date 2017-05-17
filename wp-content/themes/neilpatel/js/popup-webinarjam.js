@@ -1007,4 +1007,10 @@
 
 	});
 
+	//change link font color on hover
+
+	$('.menu-footer .btn.btn-rig').hover(function(){
+		$(this).find('a').toggleClass('hover');
+	});
+
 })(jQuery);

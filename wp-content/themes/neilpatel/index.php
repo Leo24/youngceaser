@@ -205,23 +205,10 @@ $steps = get_marketing_steps();
 			</p>
 			<p class="copyright">&copy; 2017, by I'm Kind of a Big Deal, LLC</p>
 		</div>
-		<ul class="menu-footer">
-			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14041 about"><a href="http://neilpatel.loc/about/">About</a></li>
-			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-992 blog"><a href="http://neilpatel.loc/blog/">Blog</a></li>
-			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21209 podcast"><a href="http://neilpatel.loc/podcast/">Podcast</a></li>
-			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11217 tools"><a href="http://neilpatel.loc/seo-analyzer/">Tools</a></li>
-			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22785 consulting"><a href="http://neilpatel.loc/consulting/">Consulting</a></li>
-			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10780 contact"><a href="http://neilpatel.loc/contact/">Contact</a></li>
-			<li class="menu-item menu-item-lang"><span class="img img-en"></span>
-				<ul class="lang-list">
-					<li class="item item-en item-current"><a class="url" href="http://neilpatel.loc/"><span class="img img-en"></span><span class="name">English (EN)</span></a></li>
-					<li class="item item-br"><a class="url" href="http://neilpatel.loc/br/"><span class="img img-br"></span><span class="name">Português (BR)</span></a></li>
-					<li class="item item-de"><a class="url" href="http://neilpatel.loc/de/"><span class="img img-de"></span><span class="name">Deutsch (DE)</span></a></li>
-					<li class="item item-it"><a class="url" href="http://neilpatel.loc/it/"><span class="img img-it"></span><span class="name">Italiano (IT)</span></a></li>
-					<li class="item item-es"><a class="url" href="http://neilpatel.loc/es/"><span class="img img-es"></span><span class="name">Español (ES)</span></a></li>
-				</ul>
-			</li>
-		</ul>
+		<?php wp_nav_menu( array(
+			'menu_class' => 'menu-footer'
+		) );
+		?>
 	</div>
 </footer>
 <div id="tve_notification_box"></div>
