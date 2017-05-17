@@ -1,3 +1,9 @@
+<?php
+$aboutUsInfo = get_about_us_info();
+$videoLink = get_video_link();
+$steps = get_marketing_steps();
+?>
+
 <!doctype html>
 <html lang="en-US">
 
@@ -147,7 +153,13 @@
 						<script src="<?php echo get_template_directory_uri().'/js/E-v1.js';?>" async></script>
 						<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
 							<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-								<div class="wistia_embed wistia_async_yaiosobwvf videoFoam=true" style="height:100%;width:100%">&nbsp;</div>
+								<div class="wistia_embed wistia_async_yaiosobwvf videoFoam=true" style="height:100%;width:100%">&nbsp;
+
+									<iframe width="100%" height="100%"
+<!--											src="https://www.youtube.com/embed/XGSy3_Czz8k">-->
+											src="<?php echo $videoLink['video_link'];?>">
+									</iframe>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -173,29 +185,14 @@
 				<p class="size-36 border light heading">Ready to <span class="medium">start learning marketing</span>?
 					<br> Just follow the 4 steps below&#8230;</p>
 				<ol class="list">
-					<li class="list-item">
-						<p class="size-20 medium red title">Step #1</p>
-						<p class="text">If you don&#8217;t have a website, read this step by step tutorial on how to get started. <span class="nl"></span> <span class="note">(if you have a site, skip this step)</span></p>
-						<p class="btn-wrap"><a class="btn btn-rwr" href="http://neilpatel.loc/how-to-start-a-blog/">Start a website</a></p>
-					</li>
-					<li class="list-item">
-						<p class="size-20 medium red title">Step #2</p>
-						<p class="text">If you already haven&#8217;t, make sure you attend this training seminar. <span class="note clock">* The next one starts in <span class="nl counter">14 Minutes and 59 Seconds</span></span>
-						</p>
-						<p class="btn-wrap">
-							<button class="btn btn-rwr" title="regpopbox_20948_96ca13d3f6">Join the webinar</button>
-						</p>
-					</li>
-					<li class="list-item">
-						<p class="size-20 medium red title">Step #3</p>
-						<p class="text"> Improve your knowledge <span class="nl"></span> by reading the blog. </p>
-						<p class="btn-wrap"><a class="btn btn-rwr" href="http://neilpatel.loc/blog/">Read the blog</a></p>
-					</li>
-					<li class="list-item">
-						<p class="size-20 medium red title">Step #4</p>
-						<p class="text">Subscribe to <span class="nl"></span> Marketing School.</p>
-						<p class="btn-wrap"><a class="btn btn-rwr" href="http://neilpatel.loc/podcast/">Listen to the podcast</a></p>
-					</li>
+
+					<?php foreach($steps as $step):?>
+						<li class="list-item">
+							<p class="size-20 medium red title"><?php echo $step['step_title'];?></p>
+							<p class="text"><?php echo $step['step_content'];?></p>
+							<p class="btn-wrap"><a class="btn btn-rwr" href="<?php echo $step['button_href'];?>"><?php echo $step['text_for_button'];?></a></p>
+						</li>
+					<?php endforeach;?>
 				</ol>
 			</div>
 		</div>

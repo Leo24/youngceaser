@@ -405,3 +405,34 @@ require get_template_directory() . '/inc/template-tags.php';
  * @since Twenty Fifteen 1.0
  */
 require get_template_directory() . '/inc/customizer.php';
+
+
+
+function get_about_us_info(){
+    $args = array(
+        'post_type' => 'about_us',
+    );
+    $aboutUsInfo = get_posts($args);
+    return get_fields($aboutUsInfo[0]->ID);
+}
+
+function get_video_link(){
+    $args = array(
+        'post_type' => 'video_link',
+    );
+    $videoLink = get_posts($args);
+    return get_fields($videoLink[0]->ID);
+}
+
+function get_marketing_steps(){
+    $args = array(
+        'order' => 'ASC',
+        'post_type' => 'marketing_steps',
+    );
+    $posts = get_posts($args);
+    $marketingSteps = array();
+    foreach($posts as $post){
+        $marketingSteps[] = get_fields($post->ID);
+    }
+    return $marketingSteps;
+}
