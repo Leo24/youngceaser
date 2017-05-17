@@ -156,7 +156,6 @@ $steps = get_marketing_steps();
 								<div class="wistia_embed wistia_async_yaiosobwvf videoFoam=true" style="height:100%;width:100%">&nbsp;
 
 									<iframe width="100%" height="100%"
-<!--											src="https://www.youtube.com/embed/XGSy3_Czz8k">-->
 											src="<?php echo $videoLink['video_link'];?>">
 									</iframe>
 								</div>
