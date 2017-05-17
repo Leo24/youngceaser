@@ -486,7 +486,8 @@ html[lang="de-DE"] .page-webinar-intro-header .cta .cta-img {
 	width: 805px;
 	height: 794px;
 	background: url('../images/neil-patel-v3.png') center no-repeat;
-	background-size: 100%;
+	/*background-size: 100%;*/
+	background-size: 70%;
 	position: absolute;
 	bottom: 0;
 	right: -200px;
