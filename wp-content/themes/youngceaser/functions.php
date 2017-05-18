@@ -529,3 +529,19 @@ function get_consulting_info(){
     return get_fields($consultingInfo[0]->ID);
 }
 
+
+function wpse69204_excerpt( $num_words = 20, $ending = '...', $post_id = null )
+{
+    global $post;
+
+    // Truncate post content
+    $current_post = $post_id ? get_post( $post_id ) : $post;
+    $excerpt = strip_shortcodes( $current_post->post_content );
+    $excerpt = wp_trim_words( $excerpt, $num_words, $ending );
+
+    // Read more link
+    $excerpt .= '<a href="' . get_permalink( $post ) . '" title="">Continue reading...</a>';
+
+    return $excerpt;
+}
+
