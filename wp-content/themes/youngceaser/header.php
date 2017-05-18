@@ -40,16 +40,17 @@
 	<meta name="twitter:title" content="Neil Patel: Helping You Succeed Through Online Marketing!">
 	<meta name="twitter:image" content="<?php echo get_template_directory_uri().'/images/logo.svg';?>">
 	<link rel="dns-prefetch" href="//72gpf1za5iq428ekh3r7qjc1.wpengine.netdna-cdn.com">
-	<link rel="stylesheet" id="neilpatel-comments-css" href="<?php echo get_template_directory_uri().'/css/style-comments.css';?>" type="text/css" media="all">
-	<link rel="stylesheet" id="neilpatel-popup-exit-css" href="<?php echo get_template_directory_uri().'/css/popup-exit.css';?>" type="text/css" media="all">
+	<link rel="stylesheet" id="youngceaser-comments-css" href="<?php echo get_template_directory_uri().'/css/style-comments.css';?>" type="text/css" media="all">
+	<link rel="stylesheet" id="youngceaser-popup-exit-css" href="<?php echo get_template_directory_uri().'/css/popup-exit.css';?>" type="text/css" media="all">
 	<link rel="stylesheet" id="youngceaser-popup-webinarjam-css" href="<?php echo get_template_directory_uri().'/css/popup-webinarjam.css';?>" type="text/css" media="all">
 	<link rel="stylesheet" id="youngceaser-webinar-intro-css" href="<?php echo get_template_directory_uri().'/css/style-webinar-intro.css';?>" type="text/css" media="all">
-	<link rel="stylesheet" id="neilpatel-source-sans-pro-css" href="<?php echo get_template_directory_uri().'/css/css.css';?>" type="text/css" media="all">
+	<link rel="stylesheet" id="youngceaser-source-sans-pro-css" href="<?php echo get_template_directory_uri().'/css/css.css';?>" type="text/css" media="all">
 	<link rel="stylesheet" id="youngceaser-v2-css" href="<?php echo get_template_directory_uri().'/css/style-v2.css';?>" type="text/css" media="all">
-	<link rel="stylesheet" id="neilpatel-about-css" href="<?php echo get_template_directory_uri().'/css/style-about.css';?>" type="text/css" media="all">
+	<link rel="stylesheet" id="youngceaser-about-css" href="<?php echo get_template_directory_uri().'/css/style-about.css';?>" type="text/css" media="all">
 	<link rel="stylesheet" id="cf7mls-css" href="<?php echo get_template_directory_uri().'/css/cf7mls.css';?>" type="text/css" media="all">
 	<link rel="stylesheet" id="ion-range-slider-css" href="<?php echo get_template_directory_uri().'/css/ion.rangeSlider.css';?>" type="text/css" media="all">
-	<link rel="stylesheet" id="neilpatel-popup-form-css" href="<?php echo get_template_directory_uri().'/css/popup-form.css';?>" type="text/css" media="all">
+	<link rel="stylesheet" id="youngceaser-popup-form-css" href="<?php echo get_template_directory_uri().'/css/popup-form.css';?>" type="text/css" media="all">
+	<link rel="stylesheet" id="youngceaser-popup-form-css" href="<?php echo get_template_directory_uri().'/css/style-dywmt.css';?>" type="text/css" media="all">
 	<link rel="shortcut icon" type="image/png" href="<?php echo get_site_icon_url(); ?>"/>
 	<script type="text/javascript" defer="defer" src="<?php echo get_template_directory_uri().'/js/jquery.js';?>"></script>
 	<script type="text/javascript" defer="defer" src="<?php echo get_template_directory_uri().'/js/jquery-migrate.min.js';?>"></script>
