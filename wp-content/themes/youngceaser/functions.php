@@ -421,6 +421,65 @@ function special_nav_class ($classes, $item) {
 }
 
 
+//add_action( 'init', 'create_post_type_about_us' );
+//function create_post_type_about_us() {
+//    register_post_type( 'about_us',
+//        array(
+//            'labels' => array(
+//                'name' => __( 'About Us Info' ),
+//                'singular_name' => __( 'about_us' )
+//            ),
+//            'public' => true,
+//            'has_archive' => true,
+//        )
+//    );
+//}
+
+//add_action( 'init', 'create_post_type_video_link' );
+//function create_post_type_video_link() {
+//    register_post_type( 'video_link',
+//        array(
+//            'labels' => array(
+//                'name' => __( 'Video link' ),
+//                'singular_name' => __( 'video_link' )
+//            ),
+//            'public' => true,
+//            'has_archive' => true,
+//        )
+//    );
+//}
+
+add_action( 'init', 'create_post_type_landing_info' );
+function create_post_type_landing_info() {
+    register_post_type( 'landing_info',
+        array(
+            'labels' => array(
+                'name' => __( 'Landing Page Data' ),
+                'singular_name' => __( 'landing' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+        )
+    );
+}
+
+add_action( 'init', 'create_post_type_consulting' );
+function create_post_type_consulting() {
+    register_post_type( 'consulting',
+        array(
+            'labels' => array(
+                'name' => __( 'Consulting Page Data' ),
+                'singular_name' => __( 'consulting' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+        )
+    );
+}
+
+
+
+
 /**
  * @return array
  */
@@ -457,5 +516,16 @@ function get_marketing_steps(){
         $marketingSteps[] = get_fields($post->ID);
     }
     return $marketingSteps;
+}
+
+/**
+ * @return array
+ */
+function get_consulting_info(){
+    $args = array(
+        'post_type' => 'consulting',
+    );
+    $consultingInfo = get_posts($args);
+    return get_fields($consultingInfo[0]->ID);
 }
 
