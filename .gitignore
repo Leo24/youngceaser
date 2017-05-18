@@ -14,3 +14,7 @@ wp-content/plugins/hello.php
 creads_to admin_panel
 wp-content/plugins/contact-form-7/admin/images/
 wp-content/plugins/contact-form-7/images/service-icons/
+
+wp-content/themes/twentyfifteen
+wp-content/themes/twentysixteen
+wp-content/themes/twentyseventeen
