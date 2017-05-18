@@ -95,3 +95,24 @@
 	<meta name="google-site-verification" content="">
 
 </head>
+
+
+<body class="page-template page-template-templates page-template-page_about page-template-templatespage_about-php page page-id-14040 lang-en">
+
+<?php if(!(is_home())) :?>
+<header id="header" role="banner">
+	<div class="inner">
+		<p class="logo">
+			<a href="<?php echo get_home_url(); ?>"><img class="logo-img" src="<?php echo get_header_image(); ?>" width="155" height="17" alt="Neil Patel"></a>
+		</p>
+		<?php wp_nav_menu( array(
+			'menu'       => 'header',
+			'menu_class' => 'menu-header',
+			'container' => 'nav',
+			'container_class' => 'menu-header-nav',
+		) );
+		?>
+	</div>
+</header>
+
+<?php endif; ?>

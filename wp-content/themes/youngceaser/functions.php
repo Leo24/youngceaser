@@ -406,8 +406,24 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+/**
+ * @param $classes
+ * @param $item
+ * @return array
+ */
+function special_nav_class ($classes, $item) {
+    if (in_array('current-menu-item', $classes) ){
+        $classes[] = 'active ';
+    }
+    return $classes;
+}
 
 
+/**
+ * @return array
+ */
 function get_about_us_info(){
     $args = array(
         'post_type' => 'about_us',
@@ -416,6 +432,9 @@ function get_about_us_info(){
     return get_fields($aboutUsInfo[0]->ID);
 }
 
+/**
+ * @return array
+ */
 function get_video_link(){
     $args = array(
         'post_type' => 'video_link',
@@ -424,6 +443,9 @@ function get_video_link(){
     return get_fields($videoLink[0]->ID);
 }
 
+/**
+ * @return array
+ */
 function get_marketing_steps(){
     $args = array(
         'order' => 'ASC',
@@ -436,3 +458,4 @@ function get_marketing_steps(){
     }
     return $marketingSteps;
 }
+

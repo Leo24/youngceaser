@@ -8,7 +8,6 @@ get_header();
 
 
 
-<body class="home page-template page-template-templates page-template-page_webinar-intro page-template-templatespage_webinar-intro-php page page-id-9563 layout-header-hide layout-footer-red lang-en">
 <article id="article" role="main">
 	<div id="page-home">
 		<div class="bg-g page-home-s page-home-header">

@@ -206,7 +206,7 @@ textarea:-ms-input-placeholder {
 body {
 	background: #fff;
 	color: #43464b;
-	margin-top: 78px;
+	/*margin-top: 78px;*/
 }
 
 body.layout-header-hide {

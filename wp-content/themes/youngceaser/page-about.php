@@ -8,25 +8,6 @@
 get_header();
 ?>
 
-<body class="page-template page-template-templates page-template-page_about page-template-templatespage_about-php page page-id-14040 lang-en">
-<header id="header" role="banner">
-    <div class="inner">
-        <p class="logo">
-            <a href="http://neilpatel.com/"><img class="logo-img" src="<?php echo get_header_image(); ?>" width="155" height="17" alt="Neil Patel"></a>
-        </p>
-        <nav class="menu-header-nav">
-            <ul class="menu-header">
-                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-14040 current_page_item menu-item-14042 about active"><a href="http://neilpatel.com/about/">About</a></li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189 blog"><a href="http://neilpatel.com/blog/">Blog</a></li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21210 podcast"><a href="http://neilpatel.com/podcast/">Podcast</a></li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11216 tools"><a href="http://neilpatel.com/seo-analyzer/">Tools</a></li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22787 consulting"><a href="http://neilpatel.com/consulting/">Consulting</a></li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10781 contact"><a href="http://neilpatel.com/contact/">Contact</a></li>
-                <li class="button btn-wrap menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-14 get-more-customers"><a title="Get More Customers" href="http://neilpatel.com/">Get More Customers</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
 <article id="article" role="main">
     <div id="page-about">
         <div class="page-about-video">
