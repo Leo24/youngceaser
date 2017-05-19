@@ -104,22 +104,7 @@ get_header();
 
 
 
-    <h2>BORDER TOP</h2>
-
-
-
-
-
     <?php comments_template();?>
-
-
-
-
-    <h2>BORDER BOTTOM</h2>
-
-
-
-
 
 
 
