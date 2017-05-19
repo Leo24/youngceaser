@@ -54,6 +54,7 @@
 	<link rel="stylesheet" id="child-theme-css" href="<?php echo get_template_directory_uri().'/blog/css/style.css';?>" type="text/css" media="all">
 	<link rel="stylesheet" id="magnific-popup-css" href="<?php echo get_template_directory_uri().'/blog/css/magnific-popup.css';?>" type="text/css" media="all">
 	<link rel="stylesheet" id="youngceaser-source-sans-pro-css" href="<?php echo get_template_directory_uri().'/blog/css/css_1.css';?>" type="text/css" media="all">
+	<link rel="stylesheet" id="youngceaser-source-sans-pro-css" href="<?php echo get_template_directory_uri().'/blog/css/css_2.css';?>" type="text/css" media="all">
 	<link rel="stylesheet" id="youngceaser-popup-exit-css" href="<?php echo get_template_directory_uri().'/blog/css/popup-exit.css';?>" type="text/css" media="all">
 
 	<link rel="stylesheet" id="youngceaser-v2-css" href="<?php echo get_template_directory_uri().'/css/style-v2.css';?>" type="text/css" media="all">
@@ -74,8 +75,6 @@
 
 <body class="blog paged paged-5 header-image content-sidebar">
 <div id="wrap">
-
-
 	<header id="header" role="banner">
 		<div class="inner">
 			<p class="logo">

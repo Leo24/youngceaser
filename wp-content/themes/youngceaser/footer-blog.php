@@ -23,6 +23,7 @@
 		?>
 	</div>
 </footer>
+
 <div id="tve_notification_box"></div>
 <script type="text/javascript">
 	/* <![CDATA[ */

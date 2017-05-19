@@ -39,7 +39,8 @@ get_header('blog');
 
                         <div class="post type-post status-publish format-standard hentry category-general entry">
                             <h2 class="entry-title"><a href="<?php echo get_permalink( $post->ID );?>" rel="bookmark"><?php echo $post->post_name; ?></a></h2>
-                            <div class="post-info">by <span class="author vcard"><span class="fn"><?php echo get_the_author_meta('display_name', $post->post_author); ?> </span></span> on <span class="date published time" title="2017-03-10T12:30:43+00:00"><?php echo $post->post_date; ?></span> </div>
+                            <div class="post-info">by <span class="author vcard"><span class="fn"><?php echo get_the_author_meta('display_name', $post->post_author); ?> </span></span> on <span class="date published time" title="2017-03-10T12:30:43+00:00"><?php echo date("F j, Y", strtotime($post->post_date)); ?></span> </div>
+
                             <div class="entry-content">
                                 <div class="trulysocial-horizontal"></div>
 

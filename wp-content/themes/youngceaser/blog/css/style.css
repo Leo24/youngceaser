@@ -1710,10 +1710,10 @@ input[type="submit"],
 .btn {
 	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
-	background: #DFF9CC;
-	border: 1px solid #DFF9CC;
+	background: #fcbf7e;
+	border: 1px solid #fcbf7e;
 	box-shadow: none;
-	color: #63AD2B;
+	color: #F16334;
 	cursor: pointer;
 	font-family: "Helvetica Neue", Arial, sans-serif;
 	font-size: 1.0em;
@@ -1728,7 +1728,7 @@ button:hover,
 input:hover[type="button"],
 input:hover[type="submit"],
 .btn:hover {
-	background-color: #63AD2B;
+	background-color: #F16334;
 	color: #fff;
 }
 
@@ -1830,6 +1830,11 @@ img {
 	float: left;
 	margin: 0 16px 8px 0;
 	margin: 0 1rem 0.5rem 0;
+}
+
+.children .comment-body{
+	padding-left: 20px;
+	border-left: 2px solid #F16334;
 }
 
 img.centered,

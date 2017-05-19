@@ -25,7 +25,7 @@ if ( post_password_required() ) {
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
 			<?php
-				printf( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'youngceaser' ),
+				printf( _nx( 'One comment', '%1$s comments', get_comments_number(), 'comments title', 'youngceaser' ),
 					number_format_i18n( get_comments_number() ), get_the_title() );
 			?>
 		</h2>
@@ -35,7 +35,7 @@ if ( post_password_required() ) {
 		<ol class="comment-list">
 			<?php
 				wp_list_comments( array(
-					'style'       => 'ol',
+					'style'       => 'ul',
 					'short_ping'  => true,
 					'avatar_size' => 56,
 				) );
@@ -53,6 +53,49 @@ if ( post_password_required() ) {
 		<p class="no-comments"><?php _e( 'Comments are closed.', 'youngceaser' ); ?></p>
 	<?php endif; ?>
 
-	<?php comment_form(); ?>
+
+	<?php
+	$comments_args = array(
+		// Change the title of send button
+		'label_submit' => __( 'Post Comment', 'textdomain' ),
+		// Change the title of the reply section
+		'title_reply' => __( '', 'textdomain' ),
+		// Remove "Text or HTML to be displayed after the set of comment fields".
+		'comment_notes_after' => '',
+		// Redefine your own textarea (the comment body).
+		'fields' => '',
+		'comment_field' => '
+		<div id="respond" class="comment-respond">
+                <h3 id="reply-title" class="comment-reply-title">Speak Your Mind <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2017/03/10/how-to-run-your-first-facebook-ppc-campaign-if-you-have-no-experience/#respond" style="display:none;">Cancel reply</a></small></h3>
+                <form action="https://www.quicksprout.com/wp-comments-post.php?wpe-comment-post=quicksprout" method="post" id="commentform" class="comment-form" novalidate="">
+                    <p class="comment-form-comment">
+                        <textarea id="comment" name="comment" cols="45" rows="8" tabindex="4" aria-required="true"></textarea>
+                    </p>
+                    <p class="comment-form-author">
+                        <input id="author" name="author" type="text" value="" size="30" tabindex="1" aria-required="true">
+                        <label for="author">Name</label> <span class="required">*</span></p>
+                    <p class="comment-form-email">
+                        <input id="email" name="email" type="text" value="" size="30" tabindex="2" aria-required="true">
+                        <label for="email">Email</label> <span class="required">*</span></p>
+                    <p class="form-submit">
+                        <input type="hidden" name="comment_post_ID" value="37370" id="comment_post_ID">
+                        <input type="hidden" name="comment_parent" id="comment_parent" value="0">
+                    </p>
+                    <p style="display: none;">
+                        <input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="a30594510a">
+                    </p>
+                    <p style="display: none;">
+                        <input type="hidden" id="ak_js" name="ak_js" value="244">
+                    </p>
+                </form>
+            </div>
+		
+		',
+	);
+	comment_form( $comments_args );
+	?>
+
+
+<!--	--><?php //comment_form(); ?>
 
 </div><!-- .comments-area -->
