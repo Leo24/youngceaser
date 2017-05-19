@@ -1,4 +1,5 @@
 <?php
+the_post();
 $videoLink = get_video_link();
 /**
  * Template Name: Page About
@@ -14,21 +15,22 @@ get_header();
         <div class="page-about-video">
             <div class="inner">
                 <h1 class="size-56 border title">Who is <span class="medium">Neil Patel</span>?</h1>
+
                 <div class="np-video">
                     <div class="video">
-<!--                        <iframe width="100%" height="100%"-->
-<!--                                src="--><?php //echo $videoLink['video_link'];?><!--">-->
-<!--                        </iframe>-->
-                        <p>
-                            <script charset="ISO-8859-1" src="<?php echo get_template_directory_uri().'/js/E-v1.js';?>" async></script>
-                        </p>
+                        <script src="<?php echo get_template_directory_uri().'/yaiosobwvf.jsonp';?>" async></script>
+                        <!--						<script src="--><?php //echo get_template_directory_uri().'/js/E-v1.js';?><!--" async></script>-->
                         <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-                            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-                                <div class="wistia_embed wistia_async_3bmqspoczl videoFoam=true" style="height:100%;width:100%">&nbsp;</div>
+                            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:-28px;width:100%;">
+                                <div class="wistia_embed wistia_async_yaiosobwvf videoFoam=true" style="height:100%;width:100%">&nbsp;
+
+                                    <iframe width="100%" height="100%"
+                                            src="<?php echo $videoLink['video_link'];?>">
+                                    </iframe>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <p></p>
                 </div>
                 <p></p>
             </div>
@@ -96,8 +98,31 @@ get_header();
 <div id="comments">
     <div class="comment-heading">
         <div class="inner">
-            <h3 class="entry-subtitle">Comments (<span>531</span>)</h3></div>
+            <h3 class="entry-subtitle">Comments (<span><?php echo get_comment_pages_count();?></span>)</h3></div>
     </div>
+
+
+
+
+    <h2>BORDER TOP</h2>
+
+
+
+
+
+    <?php comments_template();?>
+
+
+
+
+    <h2>BORDER BOTTOM</h2>
+
+
+
+
+
+
+
     <div class="inner">
         <ol class="comment-list"></ol>
     </div>

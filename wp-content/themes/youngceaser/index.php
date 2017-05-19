@@ -19,7 +19,7 @@ get_header();
 						<script src="<?php echo get_template_directory_uri().'/yaiosobwvf.jsonp';?>" async></script>
 <!--						<script src="--><?php //echo get_template_directory_uri().'/js/E-v1.js';?><!--" async></script>-->
 						<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-							<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+							<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:-28px;width:100%;">
 								<div class="wistia_embed wistia_async_yaiosobwvf videoFoam=true" style="height:100%;width:100%">&nbsp;
 
 									<iframe width="100%" height="100%"

@@ -596,7 +596,7 @@ html[dir="rtl"],
 .np-video:before,
 .np-video:after {
 	content: '';
-	display: block;
+	display: none;
 	position: absolute;
 	z-index: 1;
 }
@@ -620,7 +620,7 @@ html[dir="rtl"],
 .np-video .video {
 	position: relative;
 	z-index: 2;
-	top: 30px;
+	top: 0;
 	background: #f8f8f8;
 	max-width: 900px;
 	margin: 0 auto;
