@@ -67,7 +67,6 @@ if ( post_password_required() ) {
 		'comment_field' => '
 		<div id="respond" class="comment-respond">
                 <h3 id="reply-title" class="comment-reply-title">Speak Your Mind <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2017/03/10/how-to-run-your-first-facebook-ppc-campaign-if-you-have-no-experience/#respond" style="display:none;">Cancel reply</a></small></h3>
-                <form action="https://www.quicksprout.com/wp-comments-post.php?wpe-comment-post=quicksprout" method="post" id="commentform" class="comment-form" novalidate="">
                     <p class="comment-form-comment">
                         <textarea id="comment" name="comment" cols="45" rows="8" tabindex="4" aria-required="true"></textarea>
                     </p>
@@ -87,7 +86,6 @@ if ( post_password_required() ) {
                     <p style="display: none;">
                         <input type="hidden" id="ak_js" name="ak_js" value="244">
                     </p>
-                </form>
             </div>
 		
 		',
