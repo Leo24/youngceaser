@@ -21,7 +21,7 @@
 	<![endif]-->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Neil Patel: Helping You Succeed Through Online Marketing!</title>
+	<title><?php wp_title(''); ?></title>
 	<meta name="description" content="Advanced: The Simple Process That Works To Turn Ice Cold Prospects Into Happy Customers (w/ Automated Conversion Funnels &amp; Sequences.)">
 	<link rel="canonical" href="http://youngceaser.loc/">
 	<link rel="dns-prefetch" href="//72gpf1za5iq428ekh3r7qjc1.wpengine.netdna-cdn.com">

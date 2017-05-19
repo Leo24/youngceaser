@@ -3,82 +3,10 @@
  * Template Name: Blog Page
  * @package WordPress
  */
+get_header('blog');
 ?>
 
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US" prefix="og: http://ogp.me/ns#">
-
-<head profile="http://gmpg.org/xfn/11">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Quick Sprout Blog by Neil Patel</title>
-    <meta name="robots" content="noodp,noydir">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="dns-prefetch" href="//platform.twitter.com">
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//s.w.org">
-    <link rel="alternate" type="application/rss+xml" title="Quick Sprout &raquo; Feed" href="https://www.youngceaser.com/feed/">
-    <link rel="alternate" type="application/rss+xml" title="Quick Sprout &raquo; Comments Feed" href="https://www.youngceaser.com/comments/feed/">
-
-    <style type="text/css">
-        img.wp-smiley,
-        img.emoji {
-            display: inline !important;
-            border: none !important;
-            box-shadow: none !important;
-            height: 1em !important;
-            width: 1em !important;
-            margin: 0 .07em !important;
-            vertical-align: -0.1em !important;
-            background: none !important;
-            padding: 0 !important;
-        }
-    </style>
-
-
-    <link rel="stylesheet" id="tm_clicktotweet-css" href="<?php echo get_template_directory_uri().'/blog/css/styles.css';?>" type="text/css" media="all">
-    <link rel="stylesheet" id="validation_css-css" href="<?php echo get_template_directory_uri().'/blog/css/jquery.validate.css';?>" type="text/css" media="all">
-    <link rel="stylesheet" id="trulysocial-css" href="<?php echo get_template_directory_uri().'/blog/css/trulysocial.css';?>" type="text/css" media="all">
-    <link rel="stylesheet" id="youngceaser-yanone-kaffeesatz-css" href="<?php echo get_template_directory_uri().'/blog/css/css.css';?>" type="text/css" media="all">
-    <link rel="stylesheet" id="child-theme-css" href="<?php echo get_template_directory_uri().'/blog/css/style.css';?>" type="text/css" media="all">
-    <link rel="stylesheet" id="magnific-popup-css" href="<?php echo get_template_directory_uri().'/blog/css/magnific-popup.css';?>" type="text/css" media="all">
-    <link rel="stylesheet" id="youngceaser-source-sans-pro-css" href="<?php echo get_template_directory_uri().'/blog/css/css_1.css';?>" type="text/css" media="all">
-    <link rel="stylesheet" id="youngceaser-popup-exit-css" href="<?php echo get_template_directory_uri().'/blog/css/popup-exit.css';?>" type="text/css" media="all">
-
-    <link rel="stylesheet" id="youngceaser-v2-css" href="<?php echo get_template_directory_uri().'/css/style-v2.css';?>" type="text/css" media="all">
-
-
-    <script type="text/javascript" src="<?php echo get_template_directory_uri().'/blog/js/jquery.js';?>"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri().'/blog/js/jquery-migrate.min.js';?>"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri().'/blog/js/jquery.validate.js';?>"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri().'/blog/js/widgets.js';?>"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri().'/blog/js/jquery.viewport.mini.js';?>"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri().'/blog/js/jquery.cookie.js';?>"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri().'/blog/js/custom.js';?>"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri().'/blog/js/magnific-popup.js';?>"></script>
-    <meta name="description" content="Make Better Content">
-    <link rel="shortcut icon" type="image/png" href="<?php echo get_site_icon_url(); ?>"/>
-
-</head>
-
-<body class="blog paged paged-5 header-image content-sidebar">
-<div id="wrap">
-
-
-    <header id="header" role="banner">
-        <div class="inner">
-            <p class="logo">
-                <a href="<?php echo get_home_url(); ?>"><img class="logo-img" src="<?php echo get_header_image(); ?>" width="155" height="17" alt="Neil Patel"></a>
-            </p>
-            <?php wp_nav_menu( array(
-                'menu'       => 'header',
-                'menu_class' => 'menu-header',
-                'container' => 'nav',
-                'container_class' => 'menu-header-nav',
-            ) );
-            ?>
-        </div>
-    </header>
 
     <div id="inner">
         <div id="content-sidebar-wrap">
@@ -333,59 +261,7 @@
             </div>
         </div>
     </div>
-    <div id="footer" class="footer">
-        <div class="wrap">
-            <p class="copyright">Copyright &copy; by Quick Sprout, LLC</p>
-
-            <ul class="menu">
-
-                <li><a href="http://www.youngceaser.com/privacy/">Privacy Policy</a></li>
-                <li><a href="http://www.youngceaser.com/terms/">Terms of Service</a></li>
-
-            </ul>
-
-        </div>
-    </div>
-</div>
-<script type="text/javascript">
-    /* <![CDATA[ */
-    jQuery(function() {
-        jQuery("#author").validate({
-            expression: "if (VAL) return true; else return false;",
-            message: "Please Enter your name"
-        });
-
-        jQuery("#email").validate({
-            expression: "if (VAL.match(/^[^\\W][a-zA-Z0-9\\_\\-\\.]+([a-zA-Z0-9\\_\\-\\.]+)*\\@[a-zA-Z0-9_]+(\\.[a-zA-Z0-9_]+)*\\.[a-zA-Z]{2,4}$/)) return true; else return false;",
-            message: "Please Enter Valid Email Address"
-        });
-
-        jQuery("#comment").validate({
-            expression: "if (VAL) return true; else return false;",
-            message: "Please Enter your Comment"
-        });
-
-    });
-
-    /* ]]> */
-</script>
-<!--validation ends-->
 
 
-<!-- page generated time: 12:32:25 -->
-<script type="text/javascript">
-    /* <![CDATA[ */
-    var np_vars_pe = {
-        "popup_exit_title": "From \u201caha\u201d to \u201coh shit\u201d, I\u2019m sharing everything on my journey to <span> 100,000 <\/span> monthly visitors.",
-        "popup_exit_description": "I\u2019m learning a lot and so will you.",
-        "popup_exit_first_name": "First name",
-        "popup_exit_email_address": "Email address",
-        "popup_exit_submit": "Send me lessons on traffic building"
-    };
-    /* ]]> */
-</script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri().'/blog/js/popup-exit.js';?>"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri().'/blog/js/wp-embed.min.js';?>"></script>
-</body>
 
-</html>
+<?php get_footer('blog'); ?>

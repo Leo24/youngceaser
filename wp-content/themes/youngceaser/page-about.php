@@ -1,4 +1,5 @@
 <?php
+$videoLink = get_video_link();
 /**
  * Template Name: Page About
  * @package WordPress
@@ -15,6 +16,9 @@ get_header();
                 <h1 class="size-56 border title">Who is <span class="medium">Neil Patel</span>?</h1>
                 <div class="np-video">
                     <div class="video">
+<!--                        <iframe width="100%" height="100%"-->
+<!--                                src="--><?php //echo $videoLink['video_link'];?><!--">-->
+<!--                        </iframe>-->
                         <p>
                             <script charset="ISO-8859-1" src="<?php echo get_template_directory_uri().'/js/E-v1.js';?>" async></script>
                         </p>

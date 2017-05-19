@@ -16,7 +16,7 @@
 			<p class="logo">
 				<a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_header_image(); ?>" width="155" height="17" alt="Neil Patel"></a>
 			</p>
-			<p class="copyright">&copy; 2017, by I'm Kind of a Big Deal, LLC</p>
+			<p class="copyright">© 2017, YoungCeaser</p>
 		</div>
 		<?php wp_nav_menu( array(
 			'menu_class' => 'menu-footer'
