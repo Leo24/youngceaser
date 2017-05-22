@@ -554,3 +554,20 @@ function enable_threaded_comments(){
 }
 add_action('get_header', 'enable_threaded_comments');
 
+
+//hide widget title
+function flexible_widget_titles( $widget_title ) {
+
+// get rid of any leading and trailing spaces
+
+    $title = trim( $widget_title );
+
+// check the first and last character, if [ and ] set the title to empty
+
+    if ( $title[0] == '[' && $title[strlen($title) - 1] == ']' ) $title = '';
+
+    return $title;
+
+}
+
+add_filter( 'widget_title', 'flexible_widget_titles' );

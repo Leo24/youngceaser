@@ -648,6 +648,11 @@ blockquote {
 	margin-bottom: 32px;
 	margin-bottom: 2rem;
 }
+.sidebar .widget ul li a{
+	font-family: Helvetica, Arial, geomanist;
+	font-size: 14px;
+	color: #f16334;
+}
 
 .scroll-wrapper {
 	position: absolute;
@@ -1420,6 +1425,10 @@ Lists
 .entry-content ol ol,
 .entry-content ul ul {
 	margin: 0;
+}
+
+.entry-content a {
+	color: #f16334;;
 }
 
 
