@@ -180,7 +180,6 @@ a img {
 /* Fonts */
 
 body,
-.author,
 .date {
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -220,7 +219,6 @@ textarea {
 
 .post-info,
 #description,
-#footer p,
 a.comment-reply-link,
 .commentmetadata a {
 	color: #888;
@@ -255,7 +253,6 @@ a.comment-reply-link {
 }
 
 .post-comments a,
-#footer,
 .navigation li {
 	font-size: 12px;
 	font-size: 0.75rem;
@@ -274,7 +271,6 @@ a.comment-reply-link {
 }
 
 cite,
-.author,
 .date {
 	font-style: normal;
 }
@@ -1617,54 +1613,6 @@ a.comment-reply-link {
 
 
 /*
-Footer
----------------------------------------------------------------------------------------------------- */
-
-#footer {
-	clear: both;
-	overflow: hidden;
-	padding: 16px 0 24px;
-	padding: 1rem 0 1.5rem;
-}
-
-#footer .copyright {
-	margin-left: 24px;
-	margin-left: 1.5rem;
-	float: left;
-}
-
-#footer .menu {
-	margin: 0;
-	margin-right: 24px;
-	margin-right: 1.5rem;
-	float: right;
-	padding: 0;
-	list-style: none;
-}
-
-#footer .menu li {
-	float: left;
-	margin-left: 12px;
-	margin-left: 0.75rem;
-	list-style: none;
-}
-
-#footer .menu li:first-child {
-	margin-left: 0;
-}
-
-#footer .menu a {
-	display: block;
-	color: #888;
-	text-decoration: none;
-}
-
-#footer .menu a:hover {
-	text-decoration: underline;
-}
-
-
-/*
 Forms & Buttons
 ---------------------------------------------------------------------------------------------------- */
 
@@ -2174,22 +2122,11 @@ Media Queries
 		float: none;
 	}
 
-	#footer,
 	#header .menu,
 	#header .searchform,
 	#title,
 	#title-area {
 		text-align: center;
-	}
-
-	#footer .copyright,
-	#footer .menu {
-		float: none;
-		margin: 0;
-	}
-
-	#footer .menu {
-		display: inline-block;
 	}
 
 	#title {
@@ -2223,9 +2160,6 @@ Media Queries
 		box-sizing: border-box;
 	}
 
-	#footer {
-		padding: 1rem 0;
-	}
 
 	/* Started modifications for iPad portrait */
 
