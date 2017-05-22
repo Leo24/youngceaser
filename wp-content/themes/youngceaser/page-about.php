@@ -95,11 +95,7 @@ get_header();
             </div>
         </div>
     </div><span id="tve_leads_end_content" style="display: block; visibility: hidden; border: 1px solid transparent;"></span> </article>
-<div id="comments">
-    <div class="comment-heading">
-        <div class="inner">
-            <h3 class="entry-subtitle">Comments (<span><?php echo get_comment_pages_count();?></span>)</h3></div>
-    </div>
+
 
 
 
@@ -108,5 +104,4 @@ get_header();
 
 
 
-</div>
 <?php get_footer(); ?>

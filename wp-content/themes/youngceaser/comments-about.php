@@ -23,12 +23,14 @@ if ( post_password_required() ) {
 <div id="comments" class="comments-area">
 
 	<?php if ( have_comments() ) : ?>
-		<h2 class="comments-title">
-			<?php
-				printf( _nx( 'One comment', '%1$s comments', get_comments_number(), 'comments title', 'youngceaser' ),
-					number_format_i18n( get_comments_number() ), get_the_title() );
-			?>
-		</h2>
+
+
+        <div class="comment-heading">
+            <div class="inner">
+                <h3 class="entry-subtitle">Comments (<span><?php echo get_comments_number();?></span>)
+                </h3>
+            </div>
+        </div>
 
 		<?php youngceaser_comment_nav(); ?>
 

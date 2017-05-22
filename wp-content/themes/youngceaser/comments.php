@@ -77,14 +77,8 @@ if ( post_password_required() ) {
                         <input id="email" name="email" type="text" value="" size="30" tabindex="2" aria-required="true">
                         <label for="email">Email</label> <span class="required">*</span></p>
                     <p class="form-submit">
-                        <input type="hidden" name="comment_post_ID" value="37370" id="comment_post_ID">
-                        <input type="hidden" name="comment_parent" id="comment_parent" value="0">
-                    </p>
-                    <p style="display: none;">
-                        <input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="a30594510a">
-                    </p>
-                    <p style="display: none;">
-                        <input type="hidden" id="ak_js" name="ak_js" value="244">
+                        <input type="hidden" name="comment_post_ID" value="'.$post->ID.'" id="comment_post_ID">
+                        <input type="hidden" name="comment_parent" value="" id="comment_parent">
                     </p>
             </div>
 		
