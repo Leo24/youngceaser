@@ -541,7 +541,7 @@ function wpse69204_excerpt( $num_words = 20, $ending = '...', $post_id = null )
     $excerpt = wp_trim_words( $excerpt, $num_words, $ending );
 
     // Read more link
-    $excerpt .= '<a href="' . get_permalink( $post ) . '" title="">Continue reading...</a>';
+    $excerpt .= '<a href="' . get_permalink( $post ) . '" title="">...Continue reading...</a>';
 
     return $excerpt;
 }
