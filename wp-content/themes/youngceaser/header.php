@@ -83,7 +83,11 @@
 </head>
 
 
-<body class="page-template page-template-templates page-template-page_about page-template-templatespage_about-php page page-id-14040 lang-en">
+<body class="page-template page-template-templates page-template-page_about page-template-templatespage_about-php page page-id-14040 lang-en"
+<?php if(is_home()) :?>
+	style="margin-top: 0"
+<?php endif; ?>
+>
 
 <?php if(!(is_home())) :?>
 <header id="header" role="banner">
