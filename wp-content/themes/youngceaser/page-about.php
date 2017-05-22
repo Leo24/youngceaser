@@ -104,41 +104,9 @@ get_header();
 
 
 
-    <?php comments_template();?>
+    <?php comments_template('/comments-about.php');?>
 
 
 
-    <div class="inner">
-        <ol class="comment-list"></ol>
-    </div>
-    <div class="comment-form-wrap">
-        <div class="inner">
-            <div id="respond" class="comment-respond">
-                <h3 id="reply-title" class="size-36 comment-reply-title">Speak Your Mind <small><a rel="nofollow" id="cancel-comment-reply-link" href="/about/#respond" style="display:none;">Cancel reply</a></small></h3>
-                <form action="http://neilpatel.com/wp-comments-post.php?wpe-comment-post=neilpatel" method="post" id="commentform" class="np-form">
-                    <p class="text">
-                        <textarea class="field" name="comment" placeholder="Write Comment" required></textarea>
-                    </p>
-                    <p class="p-name">
-                        <input class="field" name="author" type="text" value="" placeholder="Name" required>
-                    </p>
-                    <p class="p-email">
-                        <input class="field" name="email" type="email" value="" placeholder="Email Address" required>
-                    </p>
-                    <p class="form-submit">
-                        <input name="submit" type="submit" id="submit" class="btn btn-rwr" value="Post Comment">
-                        <input type="hidden" name="comment_post_ID" value="14040" id="comment_post_ID">
-                        <input type="hidden" name="comment_parent" id="comment_parent" value="0">
-                    </p>
-                    <p style="display: none;">
-                        <input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="0c4c5c3388">
-                    </p>
-                    <p style="display: none;">
-                        <input type="hidden" id="ak_js" name="ak_js" value="158">
-                    </p>
-                </form>
-            </div>
-        </div>
-    </div>
 </div>
 <?php get_footer(); ?>
