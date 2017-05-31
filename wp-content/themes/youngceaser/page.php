@@ -18,25 +18,11 @@ get_header(); ?>
 		<div class="page-about-video">
 			<div class="inner">
 				<h1 class="size-56 border title"><?php echo wp_title();?></h1>
-				<div class="np-video">
-					<div class="video">
-						<script src="<?php echo get_template_directory_uri().'/yaiosobwvf.jsonp';?>" async></script>
-						<!--						<script src="--><?php //echo get_template_directory_uri().'/js/E-v1.js';?><!--" async></script>-->
-						<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-							<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:-28px;width:100%;">
-								<div class="wistia_embed wistia_async_yaiosobwvf videoFoam=true" style="height:100%;width:100%">&nbsp;
 
-									<iframe width="100%" height="100%"
-											src="<?php echo $data['about_page_video_link'];?>">
-									</iframe>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<p></p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
 			</div>
-			<p></p>
 		</div>
 		<div class="page-about-btn">
 			<div class="inner">
