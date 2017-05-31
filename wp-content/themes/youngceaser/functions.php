@@ -421,41 +421,27 @@ function special_nav_class ($classes, $item) {
 }
 
 
-//add_action( 'init', 'create_post_type_about_us' );
-//function create_post_type_about_us() {
-//    register_post_type( 'about_us',
-//        array(
-//            'labels' => array(
-//                'name' => __( 'About Us Info' ),
-//                'singular_name' => __( 'about_us' )
-//            ),
-//            'public' => true,
-//            'has_archive' => true,
-//        )
-//    );
-//}
-
-//add_action( 'init', 'create_post_type_video_link' );
-//function create_post_type_video_link() {
-//    register_post_type( 'video_link',
-//        array(
-//            'labels' => array(
-//                'name' => __( 'Video link' ),
-//                'singular_name' => __( 'video_link' )
-//            ),
-//            'public' => true,
-//            'has_archive' => true,
-//        )
-//    );
-//}
-
-add_action( 'init', 'create_post_type_landing_info' );
-function create_post_type_landing_info() {
-    register_post_type( 'landing_info',
+add_action( 'init', 'create_post_type_about_us' );
+function create_post_type_about_us() {
+    register_post_type( 'landing_page_data',
         array(
             'labels' => array(
                 'name' => __( 'Landing Page Data' ),
-                'singular_name' => __( 'landing' )
+                'singular_name' => __( 'landing_page_data' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+        )
+    );
+}
+
+add_action( 'init', 'create_post_type_landing_info' );
+function create_post_type_landing_info() {
+    register_post_type( 'about_us_page',
+        array(
+            'labels' => array(
+                'name' => __( 'About Us Page Data' ),
+                'singular_name' => __( 'about_us_page' )
             ),
             'public' => true,
             'has_archive' => true,
@@ -465,11 +451,25 @@ function create_post_type_landing_info() {
 
 add_action( 'init', 'create_post_type_consulting' );
 function create_post_type_consulting() {
-    register_post_type( 'consulting',
+    register_post_type( 'consulting_type',
         array(
             'labels' => array(
                 'name' => __( 'Consulting Page Data' ),
-                'singular_name' => __( 'consulting' )
+                'singular_name' => __( 'consulting_type' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+        )
+    );
+}
+
+add_action( 'init', 'create_post_type_contact' );
+function create_post_type_contact() {
+    register_post_type( 'contact_type',
+        array(
+            'labels' => array(
+                'name' => __( 'Contact Page Data' ),
+                'singular_name' => __( 'contact_type' )
             ),
             'public' => true,
             'has_archive' => true,
@@ -483,23 +483,12 @@ function create_post_type_consulting() {
 /**
  * @return array
  */
-function get_about_us_info(){
+function get_landing_page_data(){
     $args = array(
-        'post_type' => 'about_us',
+        'post_type' => 'landing_page_data',
     );
     $aboutUsInfo = get_posts($args);
     return get_fields($aboutUsInfo[0]->ID);
-}
-
-/**
- * @return array
- */
-function get_video_link(){
-    $args = array(
-        'post_type' => 'video_link',
-    );
-    $videoLink = get_posts($args);
-    return get_fields($videoLink[0]->ID);
 }
 
 /**
@@ -523,10 +512,32 @@ function get_marketing_steps(){
  */
 function get_consulting_info(){
     $args = array(
-        'post_type' => 'consulting',
+        'post_type' => 'consulting_type',
     );
     $consultingInfo = get_posts($args);
     return get_fields($consultingInfo[0]->ID);
+}
+
+/**
+ * @return array
+ */
+function get_contact_info(){
+    $args = array(
+        'post_type' => 'contact_type',
+    );
+    $contactInfo = get_posts($args);
+    return get_fields($contactInfo[0]->ID);
+}
+
+/**
+ * @return array
+ */
+function get_about_us_page(){
+    $args = array(
+        'post_type' => 'about_us_page',
+    );
+    $contactInfo = get_posts($args);
+    return get_fields($contactInfo[0]->ID);
 }
 
 

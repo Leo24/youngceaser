@@ -1,6 +1,5 @@
 <?php
-$aboutUsInfo = get_about_us_info();
-$videoLink = get_video_link();
+$aboutUsInfo = get_landing_page_data();
 $steps = get_marketing_steps();
 
 get_header();
@@ -23,7 +22,7 @@ get_header();
 								<div class="wistia_embed wistia_async_yaiosobwvf videoFoam=true" style="height:100%;width:100%">&nbsp;
 
 									<iframe width="100%" height="100%"
-											src="<?php echo $videoLink['video_link'];?>">
+											src="<?php echo $aboutUsInfo['video_link'];?>">
 									</iframe>
 								</div>
 							</div>

@@ -36,6 +36,7 @@
 	<link rel="stylesheet" id="ion-range-slider-css" href="<?php echo get_template_directory_uri().'/css/ion.rangeSlider.css';?>" type="text/css" media="all">
 	<link rel="stylesheet" id="youngceaser-popup-form-css" href="<?php echo get_template_directory_uri().'/css/popup-form.css';?>" type="text/css" media="all">
 	<link rel="stylesheet" id="youngceaser-popup-form-css" href="<?php echo get_template_directory_uri().'/css/style-dywmt.css';?>" type="text/css" media="all">
+	<link rel="stylesheet" id="youngceaser-popup-form-css" href="<?php echo get_template_directory_uri().'/css/style-contact.css';?>" type="text/css" media="all">
 	<link rel="shortcut icon" type="image/png" href="<?php echo get_site_icon_url(); ?>"/>
 	<script type="text/javascript" defer="defer" src="<?php echo get_template_directory_uri().'/js/jquery.js';?>"></script>
 	<script type="text/javascript" defer="defer" src="<?php echo get_template_directory_uri().'/js/jquery-migrate.min.js';?>"></script>

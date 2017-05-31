@@ -1,6 +1,6 @@
 <?php
 the_post();
-$videoLink = get_video_link();
+$data = get_about_us_page();
 /**
  * Template Name: Page About
  * @package WordPress
@@ -14,8 +14,7 @@ get_header();
     <div id="page-about">
         <div class="page-about-video">
             <div class="inner">
-                <h1 class="size-56 border title">Who is <span class="medium">Neil Patel</span>?</h1>
-
+                <h1 class="size-56 border title"><?php echo $data['title'];?></h1>
                 <div class="np-video">
                     <div class="video">
                         <script src="<?php echo get_template_directory_uri().'/yaiosobwvf.jsonp';?>" async></script>
@@ -25,7 +24,7 @@ get_header();
                                 <div class="wistia_embed wistia_async_yaiosobwvf videoFoam=true" style="height:100%;width:100%">&nbsp;
 
                                     <iframe width="100%" height="100%"
-                                            src="<?php echo $videoLink['video_link'];?>">
+                                            src="<?php echo $data['about_page_video_link'];?>">
                                     </iframe>
                                 </div>
                             </div>
@@ -39,7 +38,7 @@ get_header();
         <div class="page-about-btn">
             <div class="inner">
                 <p class="btn-wrap">
-                    <button class="btn btn-wrr btn-popup-form">Yes, I Want Neil To Help Me Grow My Business!</button>
+                    <button class="btn btn-wrr btn-popup-form"><?php echo $data['text_for_button_about'];?></button>
                 </p>
                 <div role="form" class="wpcf7" id="wpcf7-f24149-p14040-o1" lang="en-US" dir="ltr">
                     <div class="screen-reader-response"></div>
