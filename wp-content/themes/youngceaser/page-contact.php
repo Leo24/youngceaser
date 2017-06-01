@@ -181,33 +181,8 @@ get_header();
                     <p class="heading-img"><img src="<?php echo get_template_directory_uri().'/images/contact';?>/email-me.png" width="138" height="138" alt=""></p>
                     <h2 class="heading-text">Okay, okay, <span class="nl">just email me</span></h2></div>
                 <p class="description"><span class="text">How can I help you?</span></p>
-                <div role="form" class="wpcf7" id="wpcf7-f10779-p10778-o1" lang="en-US" dir="ltr">
-                    <div class="screen-reader-response"></div>
-                    <form action="/contact/#wpcf7-f10779-p10778-o1" method="post" class="wpcf7-form np-form" novalidate="novalidate">
-                        <div style="display: none;">
-                            <input type="hidden" name="_wpcf7" value="10779">
-                            <input type="hidden" name="_wpcf7_version" value="4.7">
-                            <input type="hidden" name="_wpcf7_locale" value="en_US">
-                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f10779-p10778-o1">
-                            <input type="hidden" name="_wpnonce" value="5c73a6e04d">
-                        </div>
-                        <p class="field-select-wrap"><span class="wpcf7-form-control-wrap cf-recipient"><select name="cf-recipient" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required field field-select" aria-required="true" aria-invalid="false"><option value="General Inquiry">General Inquiry</option><option value="Advanced Marketing Program">Advanced Marketing Program</option><option value="I Need Advice">I Need Advice</option><option value="Consulting Inquiry">Consulting Inquiry</option><option value="Speaking Request">Speaking Request</option></select></span></p>
-                        <div class="name-email">
-                            <p class="p-name"><span class="wpcf7-form-control-wrap cf-name"><input type="text" name="cf-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required field name" aria-required="true" aria-invalid="false" placeholder="Name"></span></p>
-                            <p class="p-email"><span class="wpcf7-form-control-wrap cf-email"><input type="email" name="cf-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email field mail" aria-required="true" aria-invalid="false" placeholder="Email Address"></span></p>
-                        </div>
-                        <p class="p-honey"><span class="wpcf7-form-control-wrap lastname-9811-wrap" style="display:none !important; visibility:hidden !important;"><input class="wpcf7-form-control wpcf7-text" type="text" name="lastname-9811" value="" size="40" tabindex="-1"><span class="hp-message">Please leave this field empty.</span></span>
-                        </p>
-                        <p class="p-message"><span class="wpcf7-form-control-wrap cf-message"><textarea name="cf-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required field message" aria-required="true" aria-invalid="false" placeholder="Message  (remember, short &amp; sweet please)"></textarea></span></p>
-                        <p class="form-submit">
-                            <input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit btn btn-wrr">
-                        </p>
-                        <div class="wpcf7-response-output wpcf7-display-none"></div>
-                    </form>
+                <?php echo do_shortcode('[contact-form-7 id="6" title="Contact form for Contact page" html_class="np-form"]');?>
 
-                    <?php echo do_shortcode('[contact-form-7 id="6" title="Contact form for Contact page"]');?>
-
-                </div>
             </div>
         </div>
     </div><span id="tve_leads_end_content" style="display: block; visibility: hidden; border: 1px solid transparent;"></span></article>
