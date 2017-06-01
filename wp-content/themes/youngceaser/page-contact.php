@@ -6,7 +6,7 @@
  *
  */
 
-$consultingInfo = get_contact_info();
+$contactInfo = get_contact_info();
 
 get_header();
 ?>
@@ -15,18 +15,19 @@ get_header();
     <div id="page-contact">
         <div class="page-contact-s page-contact-header">
             <div class="inner">
-                <h1 class="light border title">So you want to <span class="red">get in touch</span></h1>
-                <p class="light subtitle">Before you do here&rsquo;s a few things you ought to know</p>
+                <h1 class="light border title"><?php echo $contactInfo['first_line'];?><span class="red"><?php echo $contactInfo['second_line'];?></span></h1>
+                <p class="light subtitle"><?php echo $contactInfo['third_line'];?></p>
             </div>
         </div>
         <div class="page-contact-s page-contact-in">
             <div class="inner">
                 <div class="heading">
                     <p class="heading-img"><img src="<?php echo get_template_directory_uri().'/images/contact';?>/incoming-mail.png" width="138" height="138" alt=""></p>
-                    <h2 class="heading-text">Let&rsquo;s talk <span class="nl">incoming mail</span></h2></div>
+                    <h2 class="heading-text"><?php echo $contactInfo['heading_text_contact_in'];?></h2></div>
                 <ul class="description-list">
-                    <li class="description"><span class="text">I read every email that arrives in my inbox</span></li>
-                    <li class="description"><span class="text">I can&rsquo;t respond to all of them</span></li>
+                    <?php foreach($contactInfo['description_list'] as $value):?>
+                        <li class="description"><span class="text"><?php echo $value['list_item'];?></span></li>
+                    <?php endforeach;?>
                 </ul>
                 <div class="mailbox">
                     <div class="box"><img class="mailbox-img" src="<?php echo get_template_directory_uri().'/images/contact';?>/mailbox-in-en-v2.png" width="856" height="632" alt="">
@@ -116,16 +117,16 @@ get_header();
         <div class="page-contact-s page-contact-s-right page-contact-really">
             <div class="inner">
                 <div class="heading">
-                    <h2 class="heading-text">Do you still want <span class="nl">to contact me?</span></h2>
+                    <h2 class="heading-text"><?php echo $contactInfo['heading_text_really'];?></h2>
                     <p class="heading-img"><img src="<?php echo get_template_directory_uri().'/images/contact';?>/want-to-contact.png" width="138" height="138" alt=""></p>
                 </div>
-                <p class="description"><span class="text">Okay, okay. Just make your email short.</span></p>
+                <p class="description"><span class="text"><?php echo $contactInfo['description_really'];?></span></p>
                 <div class="respond">
                     <div class="will">
                         <div class="box">
                             <div class="header">
-                                <h3 class="title">Drop me a line!</h3>
-                                <p class="subtitle">I try my best to respond to all sorts of messages</p>
+                                <h3 class="title"><?php echo $contactInfo['respond_title_really'];?></h3>
+                                <p class="subtitle"><?php echo $contactInfo['respond_subtitle_really'];?></p>
                             </div>
                             <div class="box-inside"><img class="will-img" src="<?php echo get_template_directory_uri().'/images/contact';?>/will-v2.png" width="521" height="437" alt="">
                                 <ul class="details">
@@ -146,8 +147,8 @@ get_header();
                     <div class="wont">
                         <div class="box">
                             <div class="header">
-                                <h3 class="title">Don&rsquo;t waste your time</h3>
-                                <p class="subtitle">There&rsquo;s a few topics I just <span class="nl">won&rsquo;t respond to</span></p>
+                                <h3 class="title"><?php echo $contactInfo['respond_wont_title_really'];?></h3>
+                                <p class="subtitle"><?php echo $contactInfo['respond_wont_subtitle_really'];?></p>
                             </div>
                             <div class="box-inside"><img class="wont-img" src="<?php echo get_template_directory_uri().'/images/contact';?>/wont-v2.png" width="640" height="562" alt="">
                                 <ul class="details">
@@ -172,15 +173,15 @@ get_header();
         </div>
         <div class="page-contact-s page-contact-s-red page-contact-concise">
             <div class="inner">
-                <p>Want to get on my <em>good</em> side? <em class="nl">Be concise.</em></p>
+                <p><?php echo $contactInfo['concise_text'];?></p>
             </div>
         </div>
         <div class="page-contact-s page-contact-form">
             <div class="inner">
                 <div class="heading">
                     <p class="heading-img"><img src="<?php echo get_template_directory_uri().'/images/contact';?>/email-me.png" width="138" height="138" alt=""></p>
-                    <h2 class="heading-text">Okay, okay, <span class="nl">just email me</span></h2></div>
-                <p class="description"><span class="text">How can I help you?</span></p>
+                    <h2 class="heading-text"><?php echo $contactInfo['heading_text_form'];?></h2></div>
+                <p class="description"><span class="text"><?php echo $contactInfo['description_form'];?></span></p>
                 <?php echo do_shortcode('[contact-form-7 id="6" title="Contact form for Contact page" html_class="np-form"]');?>
 
             </div>
